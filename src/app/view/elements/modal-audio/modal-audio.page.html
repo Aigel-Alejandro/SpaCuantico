@@ -1,0 +1,32 @@
+<div class="container mt-5 overflow-auto">
+  <div class="row">
+    <h3 id="title-track">Escuchando</h3>
+    <div class="col text-center">
+      <img class="img-track" src="https://spacuantico.com/files/multimedia/{{ track.imagen }}">
+
+      <!-- <audio controls id="controls-audio" autoplay buffered [src] = srcaudios preload = auto> </audio> -->
+      <!-- <audio controls id="controls-audio" autoplay [src] = srcaudios>
+          <source id="wav_src">
+      </audio> -->
+
+    </div>
+  </div>
+
+  <div class="row" id="content">
+    <div class="col">
+      <h4 class="text-center subtitle-track"> {{ track.nombre }}</h4>
+      <p class="track-body">
+        {{ track.descripcion }}
+      </p>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col">
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" (click)="close()">Salir</button>
+      </div>
+    </div>
+  </div>
+
+</div>

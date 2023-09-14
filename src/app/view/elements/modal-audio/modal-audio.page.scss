@@ -1,0 +1,42 @@
+#title-track{
+    color: var(--principal, #007770);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+// Image
+.img-track{
+    width: 294px;
+    height: 292px;
+    border-radius: 15px;
+}
+
+.subtitle-track{
+    color: #000;
+    text-align: center;
+
+    /* H1 */
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.track-body{
+    color: #000;
+
+    /* Body */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#controls-audio{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: white;
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Spa Cuantico</string>
+    <string name="title_activity_main">Spa Cuantico</string>
+    <string name="package_name">com.spacuantico.app</string>
+    <string name="custom_url_scheme">com.spacuantico.app</string>
+</resources>

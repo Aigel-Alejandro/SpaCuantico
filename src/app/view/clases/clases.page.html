@@ -1,0 +1,84 @@
+<ion-content>
+  <div class="container">
+    
+    <!-- Titulo de la página. -->
+    <div class="row mt-4">
+      <div class="col-sm-7 mt-4" id="titulo-page">
+        Clases
+      </div>
+    </div>
+
+    <!-- Contenido de la primera sección. -->
+    <div class="row mt-5" *ngFor="let seccionsAndTranck of seccionsAndTrancks">
+      <div class="col">
+        
+        <!-- Titulo -->
+        <!-- <div class="titulo">
+          {{ seccionsAndTranck.titulo }} {{ seccionsAndTranck.coleccion }}
+        </div> -->
+        
+        <!-- Body canciones -->
+        <div class="row">
+          <div class=" mt-4 mx-auto col-6" *ngFor="let tracks of seccionsAndTranck.tracks" (click)="showModalAudio( tracks.id, 'https://spacuantico.com/musics/playVimeoApp/'+tracks.id )">
+            <div class="albun">
+              <img class="img-fluid img-albun" src="https://spacuantico.com/files/multimedia/{{ tracks.imagen }}">
+              <!-- <ion-img class="img-fluid img-albun" src="https://spacuantico.com/files/multimedia/{{ tracks.imagen }}"></ion-img> -->
+            </div>
+            <div class="controles">
+              <span class="icon-play">
+                <ion-icon name="play-circle-outline"></ion-icon>
+              </span>
+              Reproducir
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <div class="container">
+      <div class="row row-cols-sm-5">
+
+        <!-- Audios -->
+        <div class="col">
+          <span (click)="audios()">
+            <ion-img class="img-fluid img-icon-active mx-auto" src="assets/Audios-energeticos.png"></ion-img>
+          </span>
+        </div>
+  
+        <!-- Podcast -->
+        <div class="col">
+          <span (click)="podcast()">
+            <ion-img class="img-fluid img-icon mx-auto" src="assets/Podcast.png"></ion-img>
+          </span>
+        </div>
+  
+        <!-- Clases -->
+        <div class="col">
+          <span  (click)="clases()">
+            <ion-img class="img-fluid img-icon mx-auto" src="assets/Clases.png"></ion-img>
+          </span>
+        </div>
+  
+        <!-- Camaras cuanticas -->
+        <div class="col">
+          <span (click)="cuanticas()">
+            <ion-img class="img-fluid img-icon mx-auto" src="assets/Camaras-cuanticas.png"></ion-img>
+          </span>
+        </div>
+  
+        <!-- Sesiones grupales-->
+        <div class="col">
+          <span (click)="grupales()">
+            <ion-img class="img-fluid img-icon mx-auto" src="assets/Sesion-grupal.png"></ion-img>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

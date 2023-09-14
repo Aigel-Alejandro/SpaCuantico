@@ -1,0 +1,65 @@
+<div id="bg-login">
+  <div class="fixed-bottom">
+    <div class="row">
+      <div class="col">
+        <ion-img class="position-relative start-50 translate-middle" src="assets/icono.png" id="icon-login"></ion-img>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <ion-img class="position-relative start-50 translate-middle" src="assets/spa-cuantico.png" id="logo-login"></ion-img>
+      </div>
+    </div>
+
+    <form (ngSubmit)="login(fLogin)" #fLogin="ngForm">
+      <div class="row">
+        <div class="col col-md-6 offset-md-3">
+          <div class="card bg-degrant-orange">
+            <div class="card-body">
+              <h1 class="text-center mt-5 text-white">Iniciar sesión</h1>
+      
+              <div class="row">
+                <div class="col">
+                  <input type        = "mail"
+                         name        = "correo"
+                         placeholder = "Correo"
+                         class       = "form-control mt-3"
+                         [(ngModel)] = "loginUser.email"
+                         name        = "email"
+                         required    = true>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col">
+                  <input [type]      = "type"
+                         name        = "password"
+                         placeholder = "Contraseña"
+                         class       = "form-control mt-3"
+                         [(ngModel)] = "loginUser.password"
+                         name        = "password"
+                         required    = true>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col mt-4">
+                  <ion-toggle (click)="showPass()" name="showPassword" [(ngModel)] = "loginUser.showPassword">Revelar contraseña</ion-toggle>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col mt-5 mb-5">
+                  <div class="d-grid gap-2">
+                    <button class="mx-auto btn btn-primary rounded-pill px-3" type="submit" style="width: 80%;">Entrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

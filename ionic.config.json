@@ -1,0 +1,7 @@
+{
+  "name": "Spa Cuantico",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

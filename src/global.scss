@@ -1,0 +1,108 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+.form-control{
+    border-radius: 30px;
+}
+.form-control:focus{
+    border: 1px solid #FFF;
+    box-shadow: none;
+}
+.btn-primary{
+    background-color: #007770;
+    border: #007770;
+}
+
+// Css para el dashboard
+#titulo-page{
+    background-color: #125D7D;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 80%;
+    padding: 5px;
+    padding-left: 30px;
+    font-size: 28px;
+    color: white;
+}
+
+.titulo{
+    font-size: 18px;
+    border-top: 1px solid #989898;
+}
+
+
+.icon-play{
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.controles{
+    font-size: 16px;
+}
+
+.contenedor{
+    overflow-x: scroll;
+}
+
+.contenedor div{
+    padding: 5px;
+}
+
+
+// Tamanos de iconos
+.fa-x2{
+    font-size: 1.5rem;
+}
+
+.img-icon{
+    padding: 6px;
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.img-icon-active{
+    padding: 6px;
+    border-radius: 100px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+ion-footer ion-toolbar div{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.img-albun{
+    border-radius: 8px;
+}
+
+// Background color
+ion-footer{
+    background-color: #FFF !important;
+}
